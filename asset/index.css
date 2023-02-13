@@ -1,0 +1,217 @@
+@font-face {
+  font-family: Akzidenz;
+  src: url("/asset/fonts/AkzidenzGrotesk-Light.otf");
+}
+
+@font-face {
+  font-family: Akzidenz-bold;
+  src: url("/asset/fonts/AkzidenzGrotesk-Bold.otf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Akzidenz;
+}
+
+ul {
+  width: 100%;
+  padding-left: 0;
+}
+
+li .nav-link {
+  font-size: 14px;
+  color: #000000;
+  padding: 0rem 2rem;
+  transition: 0.2s;
+}
+
+li .nav-link:hover {
+  font-size: 22px;
+  font-weight: bold;
+  color: #000000;
+  padding: 0rem 2rem;
+}
+
+/* ------------------------------- */
+
+#logo {
+  text-align: center;
+  position: fixed;
+  top: 60px;
+  left: 5%;
+  margin: auto;
+  width: 92%;
+  z-index: 1000;
+  transition: 0.5s;
+}
+
+.imgbox {
+  display: grid;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  object-position: 0% -10%;
+  margin: auto;
+  position: relative;
+  z-index: -10;
+  bottom: 210px;
+}
+
+#side-menu {
+  transform: translateY(15%);
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  transform: translateY(30%);
+  justify-content: center;
+  cursor: pointer;
+  transition: 1;
+}
+
+#header.header-fixed {
+  width: 100%;
+  position: sticky;
+  background-color: #fff;
+  z-index: 100;
+}
+
+#header.container {
+  position: fixed;
+  width: 100%;
+  max-width: 100%;
+  background-color: #fff;
+  z-index: 100;
+}
+
+/* Main */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Akzidenz-bold;
+}
+
+.title {
+  position: inherit;
+  top: 20px;
+  height: 22px;
+}
+.desc {
+  position: inherit;
+  top: 14px;
+}
+
+.box {
+  background-color: #fff;
+  position: relative;
+  top: -234px;
+  text-align: center;
+}
+
+#PV-D20013 {
+  width: 700px;
+  padding: 95px 0px 0px 0px;
+}
+
+#Catalog0610 {
+  width: 1625px;
+  padding: 95px 0px 0px 0px;
+}
+
+#box2 {
+  text-align: center;
+  margin-top: 74px;
+}
+
+#container-image {
+  margin: 94px;
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+#PV-D20020 {
+  width: 1160px;
+}
+
+#Rectangle {
+  width: 500px;
+}
+
+#PV-T20001 {
+  width: 500px;
+}
+
+.centered-collection01 {
+  font-family: Akzidenz-bold;
+  font-size: 90px;
+  position: sticky;
+  top: 23%;
+  left: 50%;
+  transform: translate(0%, -250%);
+  z-index: 99;
+}
+
+/* Footer */
+body footer {
+  background-color: #f8f9f8;
+}
+
+.grid-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px 70px;
+}
+.grid-container > div {
+  aspect-ratio: 2;
+  margin: 10px;
+}
+
+#text-footer-header {
+  padding: 10px;
+  font-weight: 500;
+  /* font-size: 24pt; */
+}
+
+#text-footer {
+  padding: 10px;
+}
+
+#input-footer {
+  font-family: inherit;
+  margin-top: 8px;
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid ;
+  outline: 0;
+  background: transparent;
+  transition: border-color 0.2s;
+  font-size: 14px;
+}
+
+#button-footer {
+  margin-top: 8px;
+  border: 0;
+  padding: 5px;
+  width: 200px;
+  font-size: 10px;
+}
+/* .resultitem{
+  width:150px;
+  height:150px;
+  background:#48e;
+  -webkit-transition: 0.5s;
+          transition: 0.5s;
+}
+
+.resultitem:hover{
+  background:#59f;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+} */
