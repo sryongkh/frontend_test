@@ -36,11 +36,11 @@ li .nav-link:hover {
 /* ------------------------------- */
 
 #logo {
-  text-align: center;
+  transform: translateX(0%);
   position: fixed;
   top: 60px;
   left: 5%;
-  margin: auto;
+  margin: 0 auto;
   width: 92%;
   z-index: 1000;
   transition: 0.5s;
@@ -73,7 +73,7 @@ li .nav-link:hover {
 
 #header.header-fixed {
   width: 100%;
-  position: sticky;
+  position: fixed;
   background-color: #fff;
   z-index: 100;
 }
@@ -188,7 +188,7 @@ body footer {
   margin-top: 8px;
   width: 100%;
   border: 0;
-  border-bottom: 1px solid ;
+  border-bottom: 1px solid;
   outline: 0;
   background: transparent;
   transition: border-color 0.2s;

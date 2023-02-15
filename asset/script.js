@@ -1,25 +1,25 @@
-window.onscroll = function () {
-  scrollFunction();
-};
+// let logo = document.querySelector("#logo");
+// let scroll_tracking = window.scrollY;
+// let value = window.addEventListener("scroll", function () {
+//   scroll_tracking = window.scrollY;
+//   console.log(scroll_tracking);
+//   if (scroll_tracking > 0 && scroll_tracking <= 600) {
+//     logo.style.width = "10%";
+//   }
+// });
 
-function scrollFunction() {
-  if (
-    document.body.scrollTop > 50 ||
-    document.documentElement.scrollTop > 500
-  ) {
-    document.querySelector("#logo").style.width = "30%";
-    document.querySelector("#logo").style.align = "center";
-  } else {
-    document.querySelector("#logo").style.width = "92%";
-  }
-}
+$(document).ready(function () {
+  var initialWidth = $("#logo").width();
+  var minWidth = 1000;
+  $(document).scroll(function () {
+    // var x = initialWidth - (minWidth * $(window).scrollTop());
 
-var size = $("a").css("fontSize");
-$("a").hover(
-  function () {
-    $(this).css("fontSize", "30px");
-  },
-  function () {
-    $(this).css("fontSize", size);
-  }
-);
+    // $("#logo").css("width", x);
+
+    var min_size = Math.min(1000, 1 - 0.0015 * $(this).scrollTop());
+    scroll_tracking = window.scrollY;
+    console.log(scroll_tracking);
+    console.log(min_size);
+    
+  });
+});
