@@ -8,18 +8,17 @@
 //   }
 // });
 
-$(document).ready(function () {
-  var initialWidth = $("#logo").width();
-  var minWidth = 1000;
-  $(document).scroll(function () {
-    // var x = initialWidth - (minWidth * $(window).scrollTop());
+$(function() {
 
-    // $("#logo").css("width", x);
-
-    var min_size = Math.min(1000, 1 - 0.0015 * $(this).scrollTop());
-    scroll_tracking = window.scrollY;
-    console.log(scroll_tracking);
-    console.log(min_size);
+  $(window).scroll(function() {
     
+    var mass = $(this).scrollTop();
+    console.log(mass)
+    // $('#expandable').css('transform', 'scale(' + mass + ')');
+    if (mass == '200') {
+      $('#logo').css('transform', 'scale(100px)')
+    }
   });
 });
+
+
